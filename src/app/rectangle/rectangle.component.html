@@ -1,0 +1,5 @@
+<div>
+  <p>{{squareData}}</p>
+  <div class="rectangle" [ngClass]="{red: squareData==='red', blue: squareData==='blue', cyan: squareData==='cyan', green: squareData==='green'}"></div>
+  <button (click)="changeRectangleColor()">Shuffle Color</button>
+</div>

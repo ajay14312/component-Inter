@@ -1,0 +1,25 @@
+.rectangle {
+	width: 100px;
+	height: 100px;
+    /*background-color: green;*/
+}
+
+button {
+    padding:10px;
+    margin-top:10px;
+    width: 100px;
+}
+
+.red{
+    background-color: red!important;
+}
+
+.green{
+    background-color: green!important;
+}
+.blue {
+    background-color: blue!important;
+}
+.cyan {
+    background-color: cyan!important;
+}

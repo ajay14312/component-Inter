@@ -1,0 +1,58 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Coloring Assignment
+  </h1>
+</div>
+
+<div>
+  <p>
+    There are four shapes inside four components below:
+  </p>
+  <ul>
+    <li>Triangle</li>
+    <li>Circle</li>
+    <li>Rectangle</li>
+    <li>Donut</li>
+  </ul>
+  <p>
+    On clicking the 'Click Here To Shuffle Colors' button, colors in each of the four
+    components should be chosen randomly from these colors: red, green, blue, cyan.
+    Each component also has buttons (named 'Shuffle Colors') to shuffle their own colors.
+    There is a summary section below where you have to show the number of components of
+    each color. One constraint is that the color of the circle and the color of the donut
+    should never come out to be same.
+  </p>
+</div>
+
+<hr>
+
+<h3>Summary</h3>
+<p>Number of components with each color:</p>
+<ul>
+  <li>Red: 1</li>
+  <li>Blue: 1</li>
+  <li>Green: 1</li>
+  <li>Cyan: 1</li>
+</ul>
+
+<div>
+  <button (click)="changeChildCompColor()">Click Here To Shuffle Colors of all components</button>
+</div>
+
+<table>
+  <tr>
+    <td>
+      <app-triangle (emitStartColorData)="emitStartColorData($event)" [triangleData]="triangleData"></app-triangle>
+    </td>
+    <td>
+      <app-circle [circleData]="circleData"></app-circle>
+    </td>
+    <td>
+      <app-rectangle [squareData]="squareData" (emitRectangleColor)="emitRectangleColor($event)"></app-rectangle>
+    </td>
+    <td>
+      <app-donut [donutData]="donutData"></app-donut>
+    </td>
+  </tr>
+</table>

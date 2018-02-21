@@ -1,0 +1,5 @@
+<div>
+  <p>{{triangleData}}</p>
+  <div class="triangle" [ngClass]="{red: triangleData==='red', blue: triangleData==='blue', cyan: triangleData==='cyan', green: triangleData==='green'}"></div>
+  <button (click)="changeTriangleColor()">Shuffle Color</button>
+</div>

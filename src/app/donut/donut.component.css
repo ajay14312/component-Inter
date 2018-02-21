@@ -1,0 +1,26 @@
+.donut {
+    /*background: radial-gradient(circle, transparent 40%, purple 40%);*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+button {
+    padding:10px;
+    margin-top:10px;
+    width: 100px;
+}
+
+.red{
+    background: radial-gradient(circle, transparent 40%,  red 40%)!important;
+}
+
+.green{
+    background: radial-gradient(circle, transparent 40%,  green 40%)!important;
+}
+.blue {
+    background: radial-gradient(circle, transparent 40%,  blue 40%)!important;
+}
+.cyan {
+    background: radial-gradient(circle, transparent 40%,  cyan 40%)!important;
+}
